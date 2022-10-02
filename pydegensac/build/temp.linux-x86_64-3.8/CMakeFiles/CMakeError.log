@@ -1,0 +1,79 @@
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6cbbd/fast && /usr/bin/make  -f CMakeFiles/cmTC_6cbbd.dir/build.make CMakeFiles/cmTC_6cbbd.dir/build
+make[1]: Entering directory '/work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6cbbd.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_6cbbd.dir/CheckFunctionExists.c.o -c /opt/conda/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6cbbd
+/opt/conda/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cbbd.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_6cbbd.dir/CheckFunctionExists.c.o -o cmTC_6cbbd 
+/usr/bin/ld: CMakeFiles/cmTC_6cbbd.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_6cbbd.dir/build.make:99: cmTC_6cbbd] Error 1
+make[1]: Leaving directory '/work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_6cbbd/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8e78b/fast && /usr/bin/make  -f CMakeFiles/cmTC_8e78b.dir/build.make CMakeFiles/cmTC_8e78b.dir/build
+make[1]: Entering directory '/work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8e78b.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_8e78b.dir/src.c.o -c /work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8e78b
+/opt/conda/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e78b.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_8e78b.dir/src.c.o -o cmTC_8e78b 
+/usr/bin/ld: CMakeFiles/cmTC_8e78b.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_8e78b.dir/build.make:99: cmTC_8e78b] Error 1
+make[1]: Leaving directory '/work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_8e78b/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cbdd6/fast && /usr/bin/make  -f CMakeFiles/cmTC_cbdd6.dir/build.make CMakeFiles/cmTC_cbdd6.dir/build
+make[1]: Entering directory '/work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cbdd6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_cbdd6.dir/CheckFunctionExists.c.o -c /opt/conda/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cbdd6
+/opt/conda/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbdd6.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_cbdd6.dir/CheckFunctionExists.c.o -o cmTC_cbdd6  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_cbdd6.dir/build.make:99: cmTC_cbdd6] Error 1
+make[1]: Leaving directory '/work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_cbdd6/fast] Error 2
+
+
+

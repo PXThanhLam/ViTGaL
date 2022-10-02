@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/pydegensac/__init__.py
+src/pydegensac/utils.py
+src/pydegensac.egg-info/PKG-INFO
+src/pydegensac.egg-info/SOURCES.txt
+src/pydegensac.egg-info/dependency_links.txt
+src/pydegensac.egg-info/not-zip-safe
+src/pydegensac.egg-info/requires.txt
+src/pydegensac.egg-info/top_level.txt

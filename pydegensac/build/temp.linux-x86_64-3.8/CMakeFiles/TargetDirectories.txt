@@ -1,0 +1,9 @@
+/work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/CMakeFiles/pydegensac_support.dir
+/work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/CMakeFiles/pydegensac.dir
+/work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/CMakeFiles/edit_cache.dir
+/work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/CMakeFiles/rebuild_cache.dir
+/work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/src/pydegensac/matutls/CMakeFiles/matutls.dir
+/work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/src/pydegensac/matutls/CMakeFiles/edit_cache.dir
+/work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/src/pydegensac/matutls/CMakeFiles/rebuild_cache.dir
+/work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/lib/pybind11/CMakeFiles/edit_cache.dir
+/work/Lam_working/ImageRetrieval/Xcit_Retrieval/pydegensac/build/temp.linux-x86_64-3.8/lib/pybind11/CMakeFiles/rebuild_cache.dir
